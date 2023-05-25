@@ -1,0 +1,6 @@
+pre-commit
+pytest
+hydra-core
+black
+isort
+flake8

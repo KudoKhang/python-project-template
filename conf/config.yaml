@@ -1,0 +1,10 @@
+device: cpu
+
+checkpoints:
+  model1:
+    path_local: checkpoints/pretrained_model1.pth
+    file_id: <link to pretrained in google drive>
+
+  model2:
+    path_local: checkpoints/pretrained_model2.pth
+    file_id: <link to pretrained in google drive>

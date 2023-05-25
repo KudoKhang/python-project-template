@@ -1,0 +1,56 @@
+[project]
+name = "Python Project Template"
+authors = ["Ho Nghia Khang <hnkhang.dev@gmail.com>"]
+readme = "README.md"
+version = "0.1.0"
+description = "A Template for AI module build with python!"
+
+
+# Poetry is tool for publish your module to PYPI
+[tool.poetry]
+name = "Python Project Template"
+authors = ["Ho Nghia Khang <hnkhang.dev@gmail.com>"]
+version = "0.1.0"
+readme = "README.md"
+description = "A Template for AI module build with python!"
+repository = "https://github.com/KudoKhang/python-project-template"
+packages = [{include = "YourModule"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 127
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+# Ignore warnings when testing
+addopts = "-p no:warnings" # ignore PendingDeprecationWarning
+filterwarnings = [
+    "error",
+    "ignore::UserWarning",
+    # note the use of single quote below to denote "raw" strings in TOML
+    'ignore:function ham\(\) is deprecated:DeprecationWarning',
+]
