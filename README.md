@@ -136,7 +136,7 @@ pytest
 <h2 id="roadmap"> 🛤 Roadmap </h2>
 
 - [x] CI/CD
-- [ ] Release package
+- [ ] GitHub Actions
 
 
 See the [open issues][issue] for a full list of proposed features (and known issues).
