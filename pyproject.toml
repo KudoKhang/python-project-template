@@ -14,7 +14,7 @@ version = "0.1.0"
 readme = "README.md"
 description = "A Template for AI module build with python!"
 repository = "https://github.com/KudoKhang/python-project-template"
-packages = [{include = "YourModule"}]
+packages = [{include = "python_package_template"}]
 
 
 [tool.poetry.dependencies]

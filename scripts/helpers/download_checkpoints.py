@@ -3,9 +3,9 @@ import sys
 sys.path.insert(0, ".")
 import os
 
-from YourModule.utils.config import cfg
-from YourModule.utils.downloader import download_from_GDrive
-from YourModule.utils.logger import Logger
+from python_package_template.utils.config import cfg
+from python_package_template.utils.downloader import download_from_GDrive
+from python_package_template.utils.logger import Logger
 
 cfg = cfg()
 logger = Logger().logger
